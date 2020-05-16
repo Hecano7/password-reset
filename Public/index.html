@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Password reset form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href='style.css'>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center">
+      <div class="card">
+        <img src="./assets/street_eats_logo.png" class="card-img-top" alt="Street-Eats Logo">
+        <div class="card-body">
+          <form id='password' onsubmit="sendNewPass()"">
+            <h5 class="card-title">Enter your new password below:</h5>
+            <label class="label" for="password">New Password:</label><br>
+            <input class='input' type="text" name="password" id='new_pass'><br>
+            <label class="label" for="confirmedPassword">Confirmed New Password:</label><br>
+            <input class='input' type="text" name="confirmedPassword" id="confirm">
+            <div class="text-center"><a href="#" class="button" type="submit">Submit</a></div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
